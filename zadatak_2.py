@@ -18,7 +18,7 @@ elif b == "+" or b == "-" == d:
         print("Dozvoljena transfuzija")
     elif a == "b" == c or c == "0":
         print("Dozvoljena transfuzija")
-    elif a == "ab" != c:
+    elif a == "ab" != c or a == "ab" == c:
         print("Dozvoljena transfuzija")
     else:
         print("Nedozvoljena transfuzija")
