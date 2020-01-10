@@ -1,11 +1,12 @@
-x = (input("Unesi težinu prtljage u kg: "))
-x = float(x.replace(",", "."))
-z = nadoplata = (x-15) * 50
-z = round(z, 2)
+težina_prtljage = input("Unesi težinu prtljage u kg: ")
+težina_prtljage = float(težina_prtljage.replace(",", "."))  # ispravlja programsku grešku kod korištenja zareza za decimalne brojeve
 
-if x < 0 or x > 50:
+
+if težina_prtljage < 0 or težina_prtljage > 50:
     print("Nedopušten unos.")
-elif x <= 15:
+elif težina_prtljage <= 15:
     print("Nema nadoplate.")
 else:
-    print("Iznos nadoplate: {0} kn".format(z))
+    nadoplata = (težina_prtljage - 15) * 50
+    nadoplata = round(nadoplata, 2)
+    print(f"Iznos nadoplate: {nadoplata} kn.")

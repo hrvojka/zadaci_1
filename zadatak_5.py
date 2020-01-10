@@ -1,12 +1,11 @@
 a = int(input("Unesi dužinu prve stranice: "))
 b = int(input("Unesi dužinu druge stranice: "))
 c = int(input("Unesi dužinu treće stranice: "))
-d = 0
 
-if a != b != c:
-    d = "Trokut je raznostraničan.."
+if a != b != c != a:
+    message = "Trokut je raznostraničan.."
 elif a == b == c:
-    d = "Trokut je jednakostraničan.."
+    message =  "Trokut je jednakostraničan.."
 else:
-    d = "Trokut je jednakokračan.."
-print(d)
+    message = "Trokut je jednakokračan.."
+print(message)

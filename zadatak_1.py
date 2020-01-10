@@ -1,13 +1,15 @@
-a = Broj_Alfonaca = 5000000
-b = Broj_Velonaca = 9000000
-n = broj_godina = 0
+broj_alfonaca = 5000000
+broj_velonaca = 9000000
+broj_godina = 0
 
-while b >= a:
-    n += 1
-    a = int(a * 1.06)
-    if n % 4 == 0:
-        b = int(b * 1.05) - 500000
+while broj_velonaca >= broj_alfonaca:
+    broj_godina += 1
+    broj_alfonaca = int(broj_alfonaca * 1.06)
+
+    if broj_godina % 4 == 0:
+        broj_velonaca = int(broj_velonaca * 1.05) - 500000
+
     else:
-        b = int(b * 1.02)
+        broj_velonaca = int(broj_velonaca * 1.02)
 
-print("Broj Alfonaca premašit će broj Velonaca za {1} godina. Ukupan broj Velonaca te godine = {0}".format(a, n))
+print(f"Broj Alfonaca premašiti će broj Velonaca za {broj_godina} godina. Ukupan broj Alfonaca te godine = {broj_alfonaca}. ")
