@@ -12,4 +12,4 @@ while broj_velonaca >= broj_alfonaca:
     else:
         broj_velonaca = int(broj_velonaca * 1.02)
 
-print(f"Broj Alfonaca premašiti će broj Velonaca za {broj_godina} godina. Ukupan broj Alfonaca te godine = {broj_alfonaca}. ")
+print(f"Broj Alfonaca premašiti će broj Velonaca za {broj_godina} godina. Ukupan broj Alfonaca te godine = {broj_alfonaca}.")
