@@ -5,7 +5,7 @@ rh_faktor_donora = input("Rh faktor donora: ").lower()
 
                                      # ako nešto djeluje suvišno ne znači da je tako :)
 if (rh_faktor_primatelja == "+" and (rh_faktor_donora == "-" or rh_faktor_donora == "+"))\
-or (rh_faktor_primatelja == "-" and rh_faktor_primatelja == rh_faktor_donora):
+        or (rh_faktor_primatelja == "-" and rh_faktor_primatelja == rh_faktor_donora):
 
     if krvna_grupa_donora == "0":
         print("Dozvoljena transfuzija")
