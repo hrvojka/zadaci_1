@@ -1,26 +1,21 @@
-a = input("Krvna grupa primatelja: ").lower()
-b = input("Rh faktor primatelja: ").lower()
-c = input("Krvna grupa donora: ").lower()
-d = input("Rh faktor donora: ").lower()
+krvna_grupa_primatelja = input("Krvna grupa primatelja: ").lower()
+rh_faktor_primatelja = input("Rh faktor primatelja: ").lower()
+krvna_grupa_donora = input("Krvna grupa donora: ").lower()
+rh_faktor_donora = input("Rh faktor donora: ").lower()
 
-if a != "a" and a != "b" and a != "ab" and a != "0":
-    print("greška u unosu")
-elif c != "a" and c != "b" and c != "ab" and c != "0":
-    print("greška u unosu")
-elif b != "-" and b != "+":
-    print("greška u unosu")
-elif d != "-" and d != "+":
-    print("greška u unosu")
-elif b == "+" or b == "-" == d:
-    if a == "0" == c:
+                                     # ako nešto djeluje suvišno ne znači da je tako :)
+if (rh_faktor_primatelja == "+" and (rh_faktor_donora == "-" or rh_faktor_donora == "+"))\
+or (rh_faktor_primatelja == "-" and rh_faktor_primatelja == rh_faktor_donora):
+
+    if krvna_grupa_donora == "0":
         print("Dozvoljena transfuzija")
-    elif a == "a" == c or c == "0":
+    elif krvna_grupa_primatelja == krvna_grupa_donora:
         print("Dozvoljena transfuzija")
-    elif a == "b" == c or c == "0":
-        print("Dozvoljena transfuzija")
-    elif a == "ab" != c or a == "ab" == c:
+    elif krvna_grupa_primatelja == "ab":
         print("Dozvoljena transfuzija")
     else:
         print("Nedozvoljena transfuzija")
+
 else:
     print("Nedozvoljena transfuzija")
+
